@@ -86,14 +86,14 @@
                 function_layer {
                         label = "FUNC";
 // -----------------------------------------------------------------------------------------
-// | TAB  |     |      |      |       |      |   |    | F7 | F8 | F9 | F12 | F15 |
-// | ESC  |     |      |      |       |      |   |    | F4 | F5 | F6 | F11 | F14 |
-// | CTRL |     |      |      |       |      |   |    | F1 | F2 | F3 | F10 | F13 |
-//                     |      |       |      |   |    |    |      |
+// | TAB  |     |      |      |      |      |   |    | F7 | F8 | F9 | F12 | F15 |
+// | ESC  |     | BT 3 | BT 4 | BT 5 |      |   |    | F4 | F5 | F6 | F11 | F14 |
+// | CTRL |     | BT 0 | BT 1 | BT 2 |      |   |    | F1 | F2 | F3 | F10 | F13 |
+//                     |      |      |      |   |    |    |      |
                         bindings = <
-   &trans    &none &none &none &none &none           &none &kp F7 &kp F8 &kp F7 &kp F12 &kp F15
-   &trans    &none &none &none &none &none           &none &kp F4 &kp F5 &kp F6 &kp F11 &kp F14
-   &trans    &none &none &none &none &none           &none &kp F1 &kp F2 &kp F3 &kp F10 &kp F13
+   &trans    &none &none        &none        &none        &none           &none &kp F7 &kp F8 &kp F7 &kp F12 &kp F15
+   &trans    &none &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 &none           &none &kp F4 &kp F5 &kp F6 &kp F11 &kp F14
+   &trans    &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none           &none &kp F1 &kp F2 &kp F3 &kp F10 &kp F13
                               &trans &trans &trans   &trans &trans &trans
                         >;
                 };
