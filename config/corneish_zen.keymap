@@ -41,14 +41,14 @@
                 default_layer {
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
-// | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | ESC  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | CTRL |  Z  |  X  |  C  |  V  |  ,  |   |  .  |  M   |  N  |  B  |  /  | ALT  |
+// | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | =   |
+// | ESC  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '  |
+// | CTRL |  Z  |  X  |  C  |  V  |  ,  |   |  .  |  M   |  N  |  B  |  /  |  \  |
 //                    | BKS | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB          AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U) AS(I) AS(O) AS(P)    &kp BSPC
+   &kp TAB          AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U) AS(I) AS(O) AS(P)    &kp EQUAL
    ASO(ESC, LSFT)   AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J) AS(K) AS(L) AS(SEMI) AS(SQT)
-   &kp LCTRL        AS(Z) AS(X) AS(C) AS(V) AS(COMMA) AS(DOT) AS(M) AS(N) AS(B) AS(FSLH) &kp RALT
+   &kp LCTRL        AS(Z) AS(X) AS(C) AS(V) AS(COMMA) AS(DOT) AS(M) AS(N) AS(B) AS(FSLH) &kp BSLH
                                       &kp BKSP &mo 1 &kp LGUI  &kp RET MO_KP(SPACE, 2) &caps_word
                         >;
                 };
@@ -59,12 +59,12 @@
 // | TAB  |  !  |  @  |  {  |  }  |  |  |   |  .  |  7  |  8  |  9  |  *  |  =  |
 // | ESC  |  #  |  $  |  (  |  )  |  ~  |   |  0  |  4  |  5  |  6  |  +  |  "  |
 // | CTRL |  %  |  ^  |  [  |  ]  |  `  |   |  &  |  1  |  2  |  3  |  -  |  \  |
-//                    | GUI |     | SPC |   | ENT |  _  | ALT |
+//                    | GUI |     | SPC |   | DEL |  _  | ALT |
                         bindings = <
    &trans     &kp EXCL     &kp AT       &kp LBRC     &kp RBRC     &kp PIPE       &kp DOT  &kp N7   &kp N8   &kp N9    &kp KP_MULTIPLY &kp EQUAL
    &trans     &kp HASH     &kp DLLR     &kp LPAR     &kp RPAR     &kp TILDE      &kp N0   &kp N4   &kp N5   &kp N6    &kp PLUS        &kp DQT
    &trans     &kp PRCNT    &kp CARET    &kp LBKT     &kp RBKT     &kp GRAVE      &kp AMPS &kp N1   &kp N2   &kp N3    &kp MINUS       &kp BSLH
-                                        &trans       &trans       &trans         &trans   MO_KP(UNDER, 3) &kp RALT
+                                        &trans       &trans       &trans         &kp DEL   MO_KP(UNDER, 3) &kp RALT
                         >;
                 };
 
