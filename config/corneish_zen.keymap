@@ -56,13 +56,13 @@
                 lower_layer {
                         label = "NUMSYMB";
 // -----------------------------------------------------------------------------------------
-// | TAB  |  !  |  @  |  {  |  }  |  |  |   |  .  |  7  |  8  |  9  |  *  |  =  |
-// | ESC  |  #  |  $  |  (  |  )  |  ~  |   |  0  |  4  |  5  |  6  |  +  |  "  |
+// | TAB  |  !  |  @  |  {  |  }  |  |  |   |  0  |  7  |  8  |  9  |  *  |  =  |
+// | ESC  |  #  |  $  |  (  |  )  |  ~  |   |  .  |  4  |  5  |  6  |  +  |  "  |
 // | CTRL |  %  |  ^  |  [  |  ]  |  `  |   |  &  |  1  |  2  |  3  |  -  |  \  |
 //                    | GUI |     | SPC |   | DEL |  _  | ALT |
                         bindings = <
-   &trans     &kp EXCL     &kp AT       &kp LBRC     &kp RBRC     &kp PIPE       &kp DOT  &kp N7   &kp N8   &kp N9    &kp KP_MULTIPLY &kp EQUAL
-   &trans     &kp HASH     &kp DLLR     &kp LPAR     &kp RPAR     &kp TILDE      &kp N0   &kp N4   &kp N5   &kp N6    &kp PLUS        &kp DQT
+   &trans     &kp EXCL     &kp AT       &kp LBRC     &kp RBRC     &kp PIPE       &kp N0   &kp N7   &kp N8   &kp N9    &kp KP_MULTIPLY &kp EQUAL
+   &trans     &kp HASH     &kp DLLR     &kp LPAR     &kp RPAR     &kp TILDE      &kp DOT  &kp N4   &kp N5   &kp N6    &kp PLUS        &kp DQT
    &trans     &kp PRCNT    &kp CARET    &kp LBKT     &kp RBKT     &kp GRAVE      &kp AMPS &kp N1   &kp N2   &kp N3    &kp MINUS       &kp BSLH
                                         &trans       &trans       &trans         &kp DEL   MO_KP(UNDER, 3) &kp RALT
                         >;
